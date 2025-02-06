@@ -8,7 +8,7 @@ import AddTodo from "./pages/AddTodo.tsx";
 import Home from "./pages/Home.tsx";
 import UpdateTodo from "./pages/UpdateTodo.tsx";
 const client = new ApolloClient({
-  uri: "http://192.168.29.66:8080/graphql",
+  uri: `${import.meta.env.VITE_BACKEND_URL}/graphql"`,
   cache: new InMemoryCache(),
 });
 

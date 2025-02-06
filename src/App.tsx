@@ -1,19 +1,10 @@
 // import "./App.css";
 
-import { useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
-async function getData() {
-  const response = await fetch("http://localhost:8080/example", {
-    method: "GET",
-  });
-  const data = await response.json();
-  console.log(data);
-}
+
 function App() {
-  useEffect(() => {
-    getData();
-  }, []);
+  console.log();
   return (
     <>
       <nav className="flex items-center justify-between flex-wrap bg-indigo-500 p-5 w-screen ">
